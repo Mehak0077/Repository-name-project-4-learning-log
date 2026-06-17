@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📚 Learning Log</h1>
+
+        <label for="logDate">Date:</label>
+        <input type="date" id="logDate">
+
+        <label for="learned">Learning Notes:</label>
+        <textarea
+            id="learned"
+            placeholder="Write everything you learned today..."
+        ></textarea>
+
+        <label for="takeaway">Key Takeaway:</label>
+        <textarea
+            id="takeaway"
+            placeholder="What was the most important thing you learned?"
+        ></textarea>
+
+        <button onclick="saveEntry()">Save Entry</button>
+
+        <p id="saveStatus"></p>
+
+        <h2>Previous Entries</h2>
+
+        <ul id="entryList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
