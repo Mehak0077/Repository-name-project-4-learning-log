@@ -11,7 +11,7 @@
     <div class="container">
 
         <h1>📚 Learning Log</h1>
-
+        <div id="journalPage" class="journal-page"></div>
         <label for="logDate">Date:</label>
         <input type="date" id="logDate">
 
@@ -28,8 +28,10 @@
         ></textarea>
 
         <button onclick="saveEntry()">Save Entry</button>
+        <button onclick="deleteEntry()" class="delete-btn"> 🗑 Delete Entry </button>
 
         <p id="saveStatus"></p>
+        </div>
 
         <h2>Previous Entries</h2>
 
